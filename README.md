@@ -7,4 +7,9 @@ For my capstone project, I am going to integrate with a website commission for a
 
 The website needs to be easy to maintain and update for future integrations, such as online ordering and pickup and delivery via Doordash or UberEats. The PDF menus will eventually be replaced by the interactive third-party menu provider, Toast. 
 
+# theslipbar.sql
+This is the database schema. The locations table is directly associated with the restaurants table through the foreign key restaurant_id. This allows you to have multiple locations for a single restaurant.
 
+The events table is associated with the specific location where the event is taking place, using the foreign key location_id. This way, events are linked to a specific location, which, in turn, is associated with a particular restaurant.
+
+This structure allows you to have a restaurant with multiple locations, and events are associated with those specific locations. You can further customize the schema based on your specific needs and business requirements.
