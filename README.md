@@ -7,6 +7,8 @@ For my capstone project, I am going to integrate with a website commission for a
 
 The website needs to be easy to maintain and update for future integrations, such as online ordering and pickup and delivery via Doordash or UberEats. The PDF menus will eventually be replaced by the interactive third-party menu provider, Toast. 
 
+Tockify API: https://tockify.com/i/docs/api/embed
+
 # theslipbar.sql
 This is the database schema. The locations table is directly associated with the restaurants table through the foreign key restaurant_id. This allows you to have multiple locations for a single restaurant.
 
