@@ -1,0 +1,549 @@
+/* Add this to your existing CSS file or create a new one, e.g., index.css */
+
+/* ... Your existing styles ... */
+@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap");
+
+/* font-family: 'Big Shoulders Text', cursive; */
+/* Add this to your existing CSS file or create a new one, e.g., index.css */
+
+/* Add this to your     existing CSS file or create a new one, e.g., index.css */
+h1 {
+  text-align: center;
+  margin-bottom: 10px; /* Adjust spacing as needed */
+  background-color: rgba(83, 82, 82, 0.5); /* Transparent black background */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 100%; /* Set the width to 100% to span across the whole carousel */
+  padding: 0;
+}
+
+.logo-container,
+.footer-image-container {
+  text-align: center;
+  margin-bottom: 10px; /* Adjust spacing as needed */
+  background-color: rgba(83, 82, 82, 0.5); /* Transparent black background */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 100%; /* Set the width to 100% to span across the whole carousel */
+  padding: 0;
+}
+
+.logo {
+  max-width: 50%;
+  height: auto;
+  padding: 1px;
+}
+
+.nav-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin-top: 150px; /* Adjust the margin to align with the logo */
+}
+
+.navbar-nav {
+  display: inline;
+  flex-direction: row;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.navbar-nav .nav-link {
+  font-family: "Big Shoulders Text", cursive;
+  color: #ffffff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+/* Add this CSS to display the dropdown on hover */
+.nav-item.has-dropdown:hover .dropdown {
+  display: inline;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: none; /* Set the background color for the dropdown */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: max-content; /* Set the width to fit the content */
+  margin-top: 0px; /* Adjust the margin to align with the Locations link */
+  display: inline;
+}
+
+.dropdown li {
+  border-bottom: none;
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown li a {
+  color: #333; /* Set the color of the dropdown items */
+}
+
+/* Add this CSS to your existing styles or create a new CSS file */
+
+/* Add this CSS to your existing styles or create a new CSS file */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links a {
+    margin: 5px 0;
+  }
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links a {
+    margin: 10px 0;
+  }
+}
+
+.nav-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.nav-flex-row li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 20px 15px;
+}
+.nav-flex-row li.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+/* Add this CSS to display the dropdown on hover */
+.has-dropdown:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: none; /* Set the background color for the dropdown */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: max-content; /* Set the width to fit the content */
+  margin-top: 0px; /* Adjust the margin to align with the Locations link */
+}
+
+.dropdown li {
+  border-bottom: none;
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.nav-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.nav-flex-row li {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 20px 15px;
+  position: relative; /* Add relative positioning for the dropdown */
+}
+
+.nav-flex-row li a {
+  font-family: "Big Shoulders Text", cursive;
+  color: black;
+  font-style: extra-bold;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.section-intro {
+  height: 820px;
+  background-image: url(img/homepage.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-intro h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+.section-intro header {
+  display: flex;
+  flex: 4;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-to-book-wrapper {
+  flex: 1;
+}
+.order-now-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#order-now-btn {
+  background-color: teal;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#order-now-btn:hover {
+  background-color: #ff0055; /* Darker pink on hover */
+}
+.button-section,
+.about-section {
+  display: flex;
+    flex-direction: column;
+  align-items: center;
+  background-color: #f3f3f3c0;
+  padding: 50px 30px;
+}
+
+.link-to-book {
+  color: #ffffff;
+  display: block;
+  border: 2px solid #ffffff;
+  padding: 5px 10px;
+}
+
+a.link-to-book:hover {
+  background-color: #ffffff;
+  color: #95999e;
+  text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  font-family: "Big Shoulders Text", cursive;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.carousel-inner {
+  height: 700px;
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 30px 20px;
+}
+
+.btn.btn-primary {
+  font-family: "Big Shoulders Text", cursive;
+  color: #ffffff;
+  background-color: #95999e;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  border: 0;
+}
+
+.btn.btn-primary:hover {
+  background-color: #747474;
+}
+.opening-time,
+.contact-adress {
+  flex: 1;
+  margin: 30px 20px;
+  font-size: 1.2em;
+}
+
+.form-group p {
+  font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span {
+  display: block;
+}
+
+@media (min-width: 577px) and (max-width: 800px) {
+  .section-intro {
+    height: 500px;
+  }
+
+  .about-section p,
+  .about-section h3 {
+    font-size: 20px;
+  }
+
+  .carousel-inner {
+    height: auto;
+  }
+
+  .row-flex {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-intro {
+    height: 300px;
+  }
+
+  .about-section {
+    padding: 30px;
+  }
+
+  .section-intro h1 {
+    font-size: 2em;
+  }
+
+  .about-section p,
+  .about-section h3 {
+    font-size: 15px;
+  }
+
+  .carousel-inner {
+    height: auto;
+  }
+
+  .row-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-flex h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .form-group p {
+    font-size: 15px;
+  }
+
+  .opening-time p span,
+  .contact-adress p span {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+.footer {
+    text-align: center;
+    flex-direction: column;
+    color: black;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #343a40;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+
+/* ... Your existing styles ... */
+
+/* New styles for navigation items as bordered tiles */
+.nav-flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin-top: 150px; /* Adjust the margin to align with the logo */
+}
+
+.nav-item-tile {
+  margin: 0 10px;
+}
+
+.nav-item-tile a {
+  background-color: rgba(228, 217, 217, 0.5); /* Transparent black background */
+  text-decoration-style: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tile {
+  border: 2px solid black; /* Set the border color for the tiles */
+  color: black; /* Set the text color */
+  padding: 15px;
+  border-radius: 8px; /* Add border-radius for rounded corners */
+}
+
+.tile span {
+  font-family: "Big Shoulders Text", cursive;
+  color: #333; /* Set the text color */
+  font-style: extra-bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 10px; /* Adjust spacing between text and tile */
+}
+
+/* ... Your existing styles ... */
+/* ... Your existing styles ... */
+
+/* ... Your existing styles ... */
+
+/* ... Your existing styles ... */
+/* Default styles for all screen sizes */
+#order-now-btn {
+  margin-top: 20px;
+}
+
+/* Media query for screens with a maximum width of 767px (typical for mobile devices) */
+@media (max-width: 767px) {
+  #order-now-btn {
+    width: 100%; /* Make the button full width on mobile */
+  }
+}
+
+/* Media query for screens with a minimum width of 768px (typical for desktops) */
+@media (min-width: 768px) {
+  #order-now-btn {
+    width: auto; /* Revert to auto width on desktop */
+  }
+}
+
+/* New styles for responsive design */
+@media screen and (max-width: 992px) {
+  .nav-flex-row {
+    margin-top: 300px; /* Adjust the margin for smaller screens */
+    justify-content: center; /* Center the tiles horizontally */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-item-tile {
+    margin: 15px 5px 0; /* Fixed margin below the logo for smaller screens */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tile {
+    padding: 10px; /* Adjust padding for smaller screens */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tile span {
+    font-size: 1em; /* Adjust font size for smaller screens */
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav-flex-row {
+    margin-top: 50px; /* Adjust the margin for even smaller screens */
+  }
+
+  .nav-item-tile {
+    margin: 10px 3px 0; /* Fixed margin below the logo for even smaller screens */
+  }
+
+  .tile {
+    padding: 2px; /* Adjust padding for even smaller screens */
+  }
+
+  .tile span {
+    font-size: 0.8em; /* Adjust font size for even smaller screens */
+  }
+
+  /* Additional adjustments for smaller screens if needed */
+}
