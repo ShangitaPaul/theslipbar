@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="css/index.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-mQ9vPWW95Napaa3aBF8nnWZQKfd8lXsYXnbGrvD73UEz1qUHvR1qqEFtY8x4ePE"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/css/all.min.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <title>jobs</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .container {
+        width: 80%;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 8px;
+        color: #333;
+      }
+
+      input,
+      select,
+      textarea {
+        padding: 10px;
+        margin-bottom: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>Come Join Us!</p>
+      <form
+        action="mailto:info@theslipbar.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="position">Position Applied For:</label>
+        <input type="text" id="position" name="position" required />
+
+        <label for="location">Location Applied At:</label>
+        <input type="text" id="position" name="position" required />
+
+        <label for="resume">Upload Resume:</label>
+        <input
+          type="file"
+          id="resume"
+          name="resume"
+          accept=".pdf, .doc, .docx"
+        />
+
+        <label for="coverLetter">Cover Letter:</label>
+        <textarea
+          id="coverLetter"
+          name="coverLetter"
+          rows="4"
+          required
+        ></textarea>
+
+        <button type="submit">Submit Application</button>
+      </form>
+      <footer class="footer">
+        <div class="social-links">
+          <a href="https://www.facebook.com/theslipbar/" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/theslipbar/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <div class="footer-links">
+            <a href="homepage.html">Home</a>
+            <a href="merch.html">Merch</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="contact.html">Contact</a>
+            <a href="events.html">Events</a>
+          </div>
+        </div>
+        <p>© 2024 The Slip Bar. All Rights Reserved.</p>
+        <p>info@theslipbar.com.</p>
+      </footer>
+    </div>
+  </body>
+</html>
