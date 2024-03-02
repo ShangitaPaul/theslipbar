@@ -1,0 +1,394 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap");
+
+/* Global styles */
+body {
+  font-family: "Big Shoulders Text", cursive;
+  margin: 0;
+}
+
+/* Header styles */
+.about-container {
+  text-align: center;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+
+.logo-container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  height:automatic;
+  width: 100%;
+}
+
+
+/* Center the locations container in the carousel */
+.locations-container {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Optional: Center the text inside the container */
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.location {
+  display: inline-flexbox;
+  margin: 1px;
+  align-items: center;
+  font-family: "Big Shoulders Text", cursive;
+  font-size: x-large;
+  font-weight: 600;
+  color: black;
+}
+.locations a {
+  text-decoration-style: solid;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Big Shoulders Text", cursive;
+  font-size: large;
+  color: black;
+}
+
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens (e.g., mobile devices) */
+  .locations-container {
+      position: relative;
+      transform: none;
+  }
+  .location {
+      font-size: 2em;
+  }
+  .locations a {
+      font-size: 1.5em;
+  }
+}
+
+
+
+
+
+/* Media query for mobile */
+@media screen and (max-width: 576px) {
+  .about-container {
+    display: none;
+  }
+}
+.logo {
+  width: 50%;
+  height: auto;
+}
+
+
+
+.location {
+  display: inline-flexbox;
+  margin: 1px;
+  align-items: center;
+  font-family: "Big Shoulders Text", cursive;
+  font-size: x-large;
+  font-weight: 600;
+  color: black;
+}
+
+.locations a {
+  text-decoration-style: solid;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Big Shoulders Text", cursive;
+  font-size: large;
+  color: black;
+}
+
+.locations {
+  border: 2px solid black;
+  color: black;
+  padding: 1px;
+  border-radius: 8px;
+  margin: 1px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: "Big Shoulders Text", cursive;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+nav-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Add this CSS block to style the navigation bar image */
+.navbar-brand img {
+  max-width: 100px; /* Set the maximum width of the logo */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 10px; /* Adjust the margin for spacing */
+}
+
+/* Optional: Add a style for the navbar background color */
+.navbar {
+  background-color: #ffffff; /* Set your preferred background color */
+}
+
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .nav-flex-row {
+    margin-top: 10px;
+  }
+}
+
+/* Dropdown styles */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: none;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  width: max-content;
+  margin-top: 0px;
+}
+
+.dropdown li {
+  border-bottom: none;
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown li a {
+  color: #333;
+}
+
+
+
+/* Footer styles */
+.footer {
+  background-color: rgba(14, 77, 141, 255);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Social links */
+.social-links a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  display: inline-block; /* Ensure proper spacing between social icons */
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-links a {
+    margin: 5px 0;
+  }
+}
+/* Button styles */
+#order-now-btn {
+  background-color: teal;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+#order-now-btn:hover {
+  background-color: #ff0055;
+}
+
+/* Section styles */
+.section-intro {
+  height: 820px;
+  background-image: url(img/homepage.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-intro h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+/* About and Form section styles */
+.button-section,
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f3f3c0;
+  padding: 10px;
+}
+
+.link-to-book,
+.form-group p {
+  font-size: 1.2em;
+}
+
+a.link-to-book:hover {
+  background-color: #ffffff;
+  color: #95999e;
+  text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+  font-family: "Big Shoulders Text", cursive;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+.row-flex,
+.flex-column-form,
+.opening-time,
+.contact-adress {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 20px;
+}
+
+/* Form button styles */
+.btn.btn-primary {
+  font-family: "Big Shoulders Text", cursive;
+  color: #ffffff;
+  background-color: #95999e;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  border: 0;
+}
+
+.btn.btn-primary:hover {
+  background-color: #747474;
+}
+
+/* Opening time and contact address styles */
+.opening-time,
+.contact-adress {
+  flex: 1;
+  font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span {
+  display: block;
+}
+
+/* Carousel styles */
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  .carousel-inner {
+    height: 300px;
+  }
+
+  .carousel-item img {
+    height: 300px;
+  }
+}
+
+
+
+/* Default styles for FOOD MENU section */
+.food-menu {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.food-menu img {
+  max-width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: wrap;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  width: auto;
+  height: auto;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .food-menu {
+    margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+
+  .food-menu img {
+    max-width: 100%; /* Make images responsive to the width of the screen */
+    height: auto;
+    margin: 5px auto; /* Adjust margin for smaller screens */
+    box-shadow: none; /* Remove box shadow on smaller screens */
+  }
+
+  .menu-container {
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
