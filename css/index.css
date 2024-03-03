@@ -351,7 +351,7 @@ p {
   width: 85%;
   margin: 15px auto;
   font-family: "Big Shoulders Text", cursive;
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
   
 .row-flex,
@@ -437,9 +437,15 @@ p {
   height: auto;
 }
 
+.footer {
+  font-family: Roboto;
+  font-size: 1em;
+  color: white; 
+}
+  
 /* Media query for mobile devices */
 @media only screen and (max-width: 767px) {
-  .food-menu {
+  .food-menue{
     margin: 10px 0; /* Adjust margin for smaller screens */
   }
 
