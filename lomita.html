@@ -3,57 +3,65 @@
 
 <head>
     <!-- Required meta tags -->
- <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <link rel="stylesheet" href="css/index.css" />
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-mQ9vPWW95Napaa3aBF8nnWZQKfd8lXsYXnbGrvD73UEz1qUHvR1qqEFtY8x4ePE" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-mQ9vPWW95Napaa3aBF8nnWZQKfd8lXsYXnbGrvD73UEz1qUHvR1qqEFtY8x4ePE" crossorigin="anonymous">
     <link rel="stylesheet" href="css/css/all.min.css">
     <script src="page.js"></script>
 
-
-  
-
-    <title>The Slip Bar and Eatery</title>
-</head>
-
 <body>
-    <nav class="navbar">
-        <div class="nav-logo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
             <img src="img/slipiglogo.png" alt="The Slip Bar and Eatery" />
-        </div>
-        <div class="nav-links">
-            <a href="homepage.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="Merch.html">Merch</a>
-            <a href="jobs.html">Jobs</a>
-            <a href="contact.html">Contact</a>
-            <a href="events.html">Events</a>
-        </div>
-        <button class="mobile-nav-toggle" onclick="toggleMobileNav()">
-            <span>&#9776;</span>
-        </button>
-        <div class="mobile-nav-links">
-            <a href="homepage.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="Merch.html">Merch</a>
-            <a href="jobs.html">Jobs</a>
-            <a href="contact.html">Contact</a>
-            <a href="events.html">Events</a>
-        </div>
-    </nav>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="homepage.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Merch.html">Merch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jobs.html">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+            <div class="nav-links">
+                <!-- Dropdown menu items go here -->
+            </div>
+
+
+        <!-- Rest of your HTML content -->
+
+        <script>
+            function toggleNav() {
+                const navLinks = document.querySelector('.nav-links');
+                navLinks.classList.toggle('show');
+            }
+        </script>
     
     <header>
       <div class="logo-container">
