@@ -275,16 +275,25 @@ a.link-to-book:hover {
   text-decoration: none;
 }
 
+
 .about-section p,
 .about-section h3 {
   text-align: center;
-  width: 95%;
+  width: 90%;
   margin: auto;
   font-family: "Big Shoulders Text", cursive;
   font-size: .75em;
   text-transform: uppercase;
 }
-
+h1 {
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  font-family: "Big Shoulders Text", cursive;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  }
+  
 .row-flex,
 .flex-column-form,
 .opening-time,
