@@ -68,7 +68,7 @@ body {
   text-decoration: none;
   font-family: "arial narrow", sans-serif;
   text-transform: mixed-case;
-  font-size: .7em;
+  font-size: .5em;
   color: #333; /* Change this to your preferred link color */
   font-weight: bold;
   transition: color 0.3s ease; /* Optional: Smooth color transition on hover */
@@ -111,7 +111,7 @@ body {
 /* Media query for mobile */
 @media screen and (max-width: 576px) {
   .location-link {
-    font-size: 0.8em;
+    font-size: 0.5em;
   }
   .locations-container {
     width: 100%;
