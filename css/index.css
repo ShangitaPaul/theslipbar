@@ -5,99 +5,62 @@
 body {
   font-family: "Big Shoulders Text", cursive;
   margin: 0;
+  padding: 0;
+  color: #333;
+
 }
 
 /* Header styles */
-.about-container {
-  text-align: center;
-  background-color: none;
-  display: flexbox;
-  flex-direction: wrap;
-  position: absolute;
-  z-index: 100;
-  width: 100%;
-}
-
+.about-container,
 .logo-container {
   text-align: center;
-  background-color: none;
+  color: #333
+  background-color: rgba(255, 255, 255, 0.5);
   display: flex;
   flex-direction: column;
-  align-items: center;
   position: absolute;
-  z-index: 100;
-  width: 100%;
-}
-
-.locations-container {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.56); /* White with 50% opacity */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
   z-index: 100;
   width: 100%;
 }
 
 .logo {
   width: 50%;
-  height: 50%;
-  /* margin-bottom: 10px; */
+  height: auto;
+}
+.logo-container {
+  height: auto;
 }
 
-/* Add this to make nav-logo inline with mobile navigation */
-.nav-logo img {
-  max-width: auto; /* Ensure the image doesn't exceed its container width */
-  height: auto; /* Maintain aspect ratio */
-  display: inline; /* Display the image as inline-block to control spacing */
-  margin-right: 20px; /* Adjust margin as needed */
-}
-/* Navigation styles */
-.nav-flex-row,
-.nav-item-tile {
-  list-style: none;
+/* Center the locations container in the carousel */
+.locations-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 10px;
-  z-index: 100;
-}
-
-.nav-flex-row {
-  display: inline;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   position: absolute;
-  left: 0;
   width: 100%;
-}
-
-.navbar-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.navbar-nav .nav-item {
-  margin: 0 10px;
-}
-
-.navbar-nav .nav-link {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; /* Optional: Center the text inside the container */
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
   font-family: "Big Shoulders Text", cursive;
-  color: #ffffff;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  font-weight: 300;
+  font-size: x-large;
+  font-weight: 600;
 }
 
-/* Navigation tiles */
 .location {
-  display: inline-flexbox;
+  display: flex;
+  flex-direction: column;
   margin: 1px;
   align-items: center;
   font-family: "Big Shoulders Text", cursive;
   font-size: x-large;
-  font-weight: 600;
+  color: #333;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .locations a {
@@ -107,7 +70,8 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: "Big Shoulders Text", cursive;
-  font-size: large;
+  font-size: x-large;
+  color: #333;
 }
 
 .locations {
@@ -122,76 +86,107 @@ body {
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 300;
-  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Big Shoulders Text", cursive;
+  margin: 1px;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 576px) {
+  .locations-container {
+    width: 100%;
+    top: 90%; /* Center vertically on top of the carousel in mobile */
+    left: 0;
+
+
+    transform: translateY(-150%); /* Adjust for vertical centering */
+  }
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 576px) {
+  .about-container,
+  .logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 50%;
+    height: auto;
+
+  }
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+
+  }
+
+
+nav-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Add this CSS block to style the navigation bar image */
+.navbar-brand img {
+  max-width: 100px; /* Set the maximum width of the logo */
+  height: auto; /* Maintain the aspect ratio */
+  margin-right: 10px; /* Adjust the margin for spacing */
+}
+
+/* Optional: Add a style for the navbar background color */
+.navbar {
+  background-color: rgba(14, 77, 141, 255);
+  color: #fff;
 }
 
 /* Media queries */
-@media screen and (max-width: 992px) {
+@media (max-width: 768px) {
   .nav-flex-row {
     margin-top: 10px;
   }
-}
 
-@media screen and (max-width: 576px) {
-  .nav-flex-row,
-  .nav-item-tile {
-    margin-top: 10px;
+  /* Dropdown styles */
+  .dropdown {
+    display: block;
+    position: relative;
+    background-color: none;
+    box-shadow: none;
+    width: 100%;
+    margin-top: 0;
   }
 
-  .nav-item-tile {
-    margin: 1px;
+  .dropdown li,
+  .dropdown li:last-child {
+    border-bottom: none;
   }
 
-  .locations {
-    padding: 1px;
+  .dropdown li a {
+    color: #333;
   }
-
-  .location span {
-    font-size: 2em;
-  }
-}
-
-/* Dropdown styles */
-.dropdown {
-  display: none;
-  position: absolute;
-  background-color: none;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  width: max-content;
-  margin-top: 0px;
-}
-
-.dropdown li {
-  border-bottom: none;
-}
-
-.dropdown li:last-child {
-  border-bottom: none;
-}
-
-.dropdown li a {
-  color: #333;
-}
-
-/* Style for FOOD MENU section */
-.food-menu {
-  text-align: center; /* Center-align the content */
-  margin: 20px 0; /* Add margin for spacing */
-}
-
-/* Style for the FOOD MENU image */
-.food-menu img {
-  max-width: 100%; /* Ensure the image doesn't exceed its container width */
-  height: auto; /* Maintain aspect ratio */
-  display: block; /* Remove default inline behavior */
-  margin: 10px auto; /* Add margin for spacing and center the image */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-}
-
-.pdf-container {
-  width: 100%;
-  height: 600px; /* Set the height according to your design */
 }
 
 /* Footer styles */
@@ -202,31 +197,23 @@ body {
   padding: 20px;
 }
 
-.social-links,
-.footer-links {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.social-links a,
-.footer-links a {
+/* Social links */
+.social-links a {
   color: #fff;
   margin: 0 10px;
   font-size: 24px;
   text-decoration: none;
+  display: inline-block; /* Ensure proper spacing between social icons */
 }
 
 /* Responsive styles */
-@media (max-width: 768px) {
-  .social-links,
-  .footer-links {
+@media (max-width: 576px) {
+  .social-links {
     flex-direction: column;
     align-items: center;
   }
 
-  .social-links a,
-  .footer-links a {
+  .social-links a {
     margin: 5px 0;
   }
 }
@@ -334,226 +321,65 @@ a.link-to-book:hover {
   display: block;
 }
 
-/* Add this to your existing CSS */
-
 /* Carousel styles */
 .carousel-inner {
-  height: 100%; /* Set the height to 100% */
+  height: 100%;
 }
 
 .carousel-item {
-  height: 100%; /* Set the height of each carousel item to 100% */
+  height: 100%;
 }
 
 .carousel-item img {
-  object-fit: cover; /* Make the image cover the entire carousel item */
-  width: 100%; /* Make the image width 100% of the carousel item */
-  height: 100%; /* Make the image height 100% of the carousel item */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-/* Media queries for mobile */
 @media (max-width: 576px) {
   .carousel-inner {
-    height: 300px; /* Set a specific height for mobile screens */
-  }
-
-  .carousel-item img {
-    height: 300px; /* Set a specific height for mobile screens */
-  }
-}
-
-/* Media queries for desktop */
-@media (min-width: 992px) {
-  .carousel-inner {
-    height: 800px; /* Adjust height for desktop screens */
-  }
-
-  .carousel-item img {
-    height: 800px; /* Adjust height for desktop screens */
-  }
-}
-
-
-/* Media queries for specific screen sizes */
-@media (min-width: 577px) and (max-width: 800px) {
-  .section-intro {
-    height: 500px;
-  }
-
-  .about-section p,
-  .about-section h3 {
-    font-size: 20px;
-  }
-
-  .carousel-inner {
-    height: auto;
-  }
-
-  .row-flex {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .section-intro {
     height: 300px;
   }
 
-  .about-section {
-    padding: auto;
-  }
-
-  .section-intro h1 {
-    font-size: 2em;
-  }
-
-  .about-section p,
-  .about-section h3 {
-    font-size: 15px;
-  }
-
-  .carousel-inner {
-    height: auto;
-  }
-
-  .row-flex {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .row-flex h3 {
-    font-size: 25px;
-    text-align: center;
-  }
-
-  .form-group p {
-    font-size: 15px;
-  }
-
-  .opening-time p span,
-  .contact-adress p span {
-    font-size: 15px;
-    text-align: center;
+  .carousel-item img {
+    height: 300px;
   }
 }
 
-@media screen and (max-width: 992px) {
-  .about-container,
-  .nav-flex-row {
-    margin-top: 300px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav-item-tile {
-    list-style: none;
-    margin: 15px 5px 0;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tile {
-    padding: 10px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tile span {
-    font-size: 1em;
-    flex-direction: column;
-    align-items: center;
-  }
+/* Default styles for FOOD MENU section */
+.food-menu {
+  text-align: center;
+  margin: 20px 0;
 }
 
-@media screen and (max-width: 576px) {
-  .about-container,
-  .nav-flex-row {
-    margin-top: 50px;
-  }
-
-  .nav-item-tile {
-    margin: 10px 3px 0;
-  }
-
-  .tile {
-    padding: 2px;
-  }
-
-  .tile span {
-    font-size: 0.8em;
-  }
-}
-
-/* Your existing styles */
-
-/* Your existing styles */
-
-/* Add this to your existing CSS */
-
-/* Navbar styles */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgba(14, 77, 141);
-  padding: 15px;
-  position: relative;
-}
-
-/* Add this to style the nav-logo image */
-.nav-logo img {
-  max-width: 30%;
+.food-menu img {
+  max-width: auto;
   height: auto;
-  display: inline-block;
-}
-
-.nav-links {
   display: flex;
-  gap: 20px;
+  flex-direction: wrap;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.nav-links a {
-  color: #fff;
-  text-decoration: none;
+.menu-container {
+  width: auto;
+  height: auto;
 }
 
-.mobile-nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 1.5em;
-  color: #fff;
-}
-
-.mobile-nav-links {
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  top: 70px;
-  right: 0; /* Move the mobile nav bar to the right */
-  background-color: rgba(14, 77, 141);
-  width: 100%;
-  padding: 15px;
-  box-sizing: border-box;
-}
-
-.mobile-nav-links a {
-  color: #fff;
-  text-decoration: none;
-}
-
-
-/* Responsive styles */
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  .food-menu {
+    margin: 10px 0; /* Adjust margin for smaller screens */
   }
 
-  .mobile-nav-toggle {
-    display: block;
+  .food-menu img {
+    max-width: 100%; /* Make images responsive to the width of the screen */
+    height: auto;
+    margin: 5px auto; /* Adjust margin for smaller screens */
+    box-shadow: none; /* Remove box shadow on smaller screens */
+  }
+
+  .menu-container {
+    height: auto; /* Adjust height for smaller screens */
   }
 }
-

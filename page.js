@@ -2,7 +2,19 @@
 function toggleMobileNav() {
     const mobileNavLinks = document.querySelector('.mobile-nav-links');
     mobileNavLinks.style.display = (mobileNavLinks.style.display === 'flex') ? 'none' : 'flex';
-  }
+}
+  
+// // Mobile navigation links
+// function toggleMobileNav() {
+//   document.body.classList.toggle('mobile-nav-active');
+// }
+
+// Corrected JavaScript function for toggling mobile navigation
+
+// // function toggleMobileNav() {
+//   document.body.classList.toggle('mobile-nav-active');
+// }
+
   
 //   // Toggle mobile navigation links
 // document.addEventListener('DOMContentLoaded', function () {

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
+ <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -19,21 +21,38 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-mQ9vPWW95Napaa3aBF8nnWZQKfd8lXsYXnbGrvD73UEz1qUHvR1qqEFtY8x4ePE" crossorigin="anonymous">
     <link rel="stylesheet" href="css/css/all.min.css">
-    <link rel="stylesheet" href="css/index.css" />
+    <script src="page.js"></script>
+
+
+    <title>The Slip Bar and Eatery</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="img/slipiglogo.png" alt="The Slip Bar and Eatery" />
+        </div>
+        <div class="nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Merch.html">Merch</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="contact.html">Contact</a>
+            <a href="events.html">Events</a>
+        </div>
+        <button class="mobile-nav-toggle" onclick="toggleMobileNav()">
+            <span>&#9776;</span>
+        </button>
+        <div class="mobile-nav-links">
+            <a href="homepage.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Merch.html">Merch</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="contact.html">Contact</a>
+            <a href="events.html">Events</a>
+        </div>
+    </nav>
     
-    <script href="page.js"></script>
-    
-
-
-  
-
-    <title>The Slip Redondo Beach</title>
-    <style>.logo-container, .footer-image-container {
-      background-color: rgba(255, 255, 255, 0.436); /* White with 50% opacity */
-      padding: 1px; /* Adjust padding as needed */
-    }</style>
-  </head>
-  <body>
     <header>
       <div class="logo-container">
         <img class="logo" src="img/thesliprbaddresslogo.png" alt="Restaurant Logo" />
@@ -106,12 +125,12 @@
     
     <div class="food-menu">
       <h2> Menu </h2>
-      <div class="pdf-container">
+      <div class="Menu-container">
         <!-- Embed PDF here -->
-        <embed src="./menus/Fall Redondo  2023 (1).pdf" type="application/pdf" width="100%" height="100%">
-    <!-- </div>
-      <img src="./menus/redondomenupage1.png" alt="food menu" />
-      <img src="./menus/Fall Redondo  2023 (1).pdf" alt="food menu" /> -->
+        <img src="./menus/redondomenupage2.jpg" type="application/pdf" width="100%" height="600px" /> 
+
+      <img src="./menus/redondomenupage1.jpg" type="application/pdf" width="100%" height="600px" /> 
+  
     </div>
     </section>
     <!-- </div>
@@ -135,22 +154,15 @@
 
     <footer class="footer">
       <div class="social-links">
-        <a href="https://www.facebook.com/theslipbar/" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.instagram.com/theslipbar/" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <div class="footer-links">
-          <a href="homepage.html">Home</a>
-          <a href="Merch.html">Merch</a>
-          <a href="jobs.html">Jobs</a>
-          <a href="contact.html">Contact</a>
-          <a href="events.html">Events</a>
-        </div>
+          <a href="https://www.facebook.com/theslipbar/" target="_blank">
+              <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://www.instagram.com/theslipbar/" target="_blank">
+              <i class="fab fa-instagram"></i>
+          </a>
       </div>
       <p>© 2024 The Slip Bar. All Rights Reserved.</p>
-      <p> info@theslipbar.com.</p>
+      <p>info@theslipbar.com</p>
     </footer>
 
     <!-- Optional JavaScript -->
@@ -170,5 +182,5 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-  </body>
+</body>
 </html>
