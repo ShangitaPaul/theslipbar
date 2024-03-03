@@ -29,7 +29,7 @@ body {
 }
 .logo-container {
   width: 100%;
-  border-top: 5px solid black;
+  /*border-top: 5px solid black;*/
   height: auto;
   background-color: rgba(255, 255, 255, 0.5);
   
@@ -398,6 +398,7 @@ p {
 
 .carousel-item {
   height: 100%;
+  border-top: 5px solid black;
 }
 
 .carousel-item img {
