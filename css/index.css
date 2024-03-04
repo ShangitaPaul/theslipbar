@@ -344,7 +344,7 @@ a.link-to-book:hover {
 }
 
 
-.about-section p,
+.about-section h2,
 .about-section h3 {
   text-align: center;
   width: 90%;
@@ -363,7 +363,7 @@ h1 {
   text-transform: uppercase;
 }
 
-
+.about-section p,
 p {
   text-align: center;
   width: 85%;
