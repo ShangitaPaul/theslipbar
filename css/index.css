@@ -425,7 +425,7 @@ p {
 
 .carousel-item {
   height: 100%;
-  border-top: 5px solid black;
+  border-top: 5px solid rgba(14,77,141,255);;
 }
 
 .carousel-item img {
