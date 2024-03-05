@@ -117,9 +117,7 @@ body {
     width: 100%;
     top: 90%; /* Center vertically on top of the carousel in mobile */
     left: 0;
-
-
-    transform: translateY(-153%); /* Adjust for vertical centering */
+    transform: translateY(-139%); /* Adjust for vertical centering */
   }
 }
 
