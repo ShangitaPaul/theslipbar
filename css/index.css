@@ -266,9 +266,8 @@ nav-brand {
   text-align: center;
 }
 
-/* Social links */
+
 .social-links a {
-  color: #fff;
   margin: 0 10px;
   font-size: 24px;
   text-decoration: none;
@@ -325,6 +324,7 @@ nav-brand {
 /* About and Form section styles */
 .button-section,
 .about-section {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -354,6 +354,14 @@ a.link-to-book:hover {
   text-transform: uppercase;
 }
 
+h2 {
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  font-family: "Big Shoulders Text", cursive;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
 h1 {
   text-align: center;
   width: 95%;
@@ -454,7 +462,61 @@ p {
   height: auto;
 }
 
+.form-container {
+  font-family: Arial, sans-serif;
+  background-color: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .container {
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
 .footer {
+  align-items: center;
   font-family: Roboto;
   font-size: 1em;
   color: white; 
