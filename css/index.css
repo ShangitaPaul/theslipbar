@@ -53,22 +53,24 @@ body {
 }
 
 .location {
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin: 1px;
   align-items: center;
   /* font-family: "Big Shoulders Text", cursive; */ */
-  font-size: x-large;
+  font-size: 1.2em;
   color: #333;
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 300;
 }
 .location-link {
+  width: 100%;
+  font-size: .8em;
   text-decoration: none;
   font-family: "arial narrow", sans-serif;
   text-transform: mixed-case;
-  font-size: .5em;
   color: #333; /* Change this to your preferred link color */
   font-weight: bold;
   transition: color 0.3s ease; /* Optional: Smooth color transition on hover */
@@ -111,7 +113,7 @@ body {
 /* Media query for mobile */
 @media screen and (max-width: 576px) {
   .location-link {
-    font-size: 0.39em;
+    font-size: 0.7em;
   }
   .locations-container {
     width: 100%;
