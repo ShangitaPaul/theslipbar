@@ -1,0 +1,640 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap");
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+
+}
+
+/* Header styles */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center; /* Optional: Center the text inside the container */
+  color: #333;
+  font-size: x-large;
+  font-weight: 600;
+  transform: translateY(0);
+}
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0;
+  left: 0;
+  padding: 10px;
+  text-align: center; /* Optional: Center the text inside the container */
+  color: #333;
+  font-size: x-large;
+  font-weight: 600;
+  transform: translateY(0);
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 0;
+  left: 0;
+  text-align: center; /* Optional: Center the text inside the container */
+  color: #333;
+  font-size: x-large;
+  transform: translateY(300%);
+}
+/* Center the locations container in the carousel */
+
+.locations-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  text-align: center; /* Optional: Center the text inside the container */
+  background-color: none;
+  color: #333;
+  font-size: 1.2em;
+  z-index: 100;
+  transform: translateY(46%);
+}
+
+.location {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  align-items: center;
+  /* font-family: "Big Shoulders Text", cursive; */ */
+  font-size: 1em;
+  color: #333;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.location-link:hover {
+  color: #0056b3; /* Change this to your preferred link color on hover */
+}
+
+
+.tile span {
+  color: #333;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Big Shoulders Text", cursive; */
+  margin: 1px;
+}
+
+.navbar-brand img {
+  max-width: 250px; /* Set the maximum width of the logo */
+  height: auto; /* Maintain the aspect ratio */
+}
+.social-links {
+  display: flex; /* Change display to flex */
+  align-items: center; /* Align items vertically */
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav-link {
+  display: flex; /* Change display to flex */
+  align-items: center; /* Align items vertically */
+}
+
+.social-links a {
+  color: rgba(14, 77, 141, 255);
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Media query for mobile */
+@media screen and (max-width: 576px) {
+  .banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center; /* Optional: Center the text inside the container */
+    color: #333;
+    font-size: x-large;
+    transform: translateY(50%);
+  }
+  .locations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    text-align: center; /* Optional: Center the text inside the container */
+    background-color: none;
+    color: #333;
+    font-size: small;
+    z-index: 100;
+    transform: translateY(16%);
+  }
+/* Media query for smaller screens */
+@media screen and (max-width: 576px) {
+
+  .about-container,
+  .logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 50%;
+    height: auto;
+
+  }
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+
+  }
+
+
+nav-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+/* Add this CSS block to style the navigation bar image */
+.navbar-brand img {
+  max-width: 250px; /* Set the maximum width of the logo */
+  height: auto; /* Maintain the aspect ratio */
+
+}
+
+/* Optional: Add a style for the navbar background color */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(14, 77, 141, 255, 0.2);
+  color: #333;
+  border-bottom: 5px solid rgba(14, 77, 141, 255)
+}
+
+
+
+.navbar-toggler-icon {
+  font-size: 18px; /* Adjust the font size to make it smaller */
+}
+.navbar-nav {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-size: 1,1em;
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: "Big Shoulders Text", cursive;
+  font-weight: 300;
+}
+.navbar-nav a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: "Big Shoulders Text", cursive;
+  font-weight: 300;
+}
+.nav-item {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: "Big Shoulders Text", cursive;
+  font-weight: 300;
+}
+.nav-item a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: "Big Shoulders Text", cursive;
+  font-weight: 300;
+}
+.nav-item a:hover {
+  color: white;
+  text-decoration: none;
+}
+.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  margin: 0 10px;
+  text-decoration: none;
+  font-family: "Big Shoulders Text", cursive;
+  font-weight: 300;
+}
+
+  /* Dropdown styles */
+  .dropdown {
+    display: block;
+    position: relative;
+    background-color: none;
+    box-shadow: none;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .dropdown li,
+  .dropdown li:last-child {
+    border-bottom: none;
+  }
+
+  .dropdown li a {
+    color: #333;
+  }
+  .navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
+
+/* Footer styles */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(14, 77, 141, 255);
+  color: #fff;
+  text-align: center;
+  padding: none;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.footer img {
+  max-width: 20%; /* Set the maximum width of the logo */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 0;
+  padding: 0;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  background-color: rgba(14, 77, 141, 255);
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+  transform: translateY(0);
+}
+
+.social-links a {
+  color: rgba(14, 77, 141, 255);
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  display: inline-block; /* Ensure proper spacing between social icons */
+}
+
+/* Responsive styles */
+@media (max-width: 576px) {
+  .social-links a {
+    font-size: 18px; /* Adjust the font size to make it smaller */
+  }
+}
+
+/* Button styles */
+#order-now-btn {
+  background-color: teal;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+#order-now-btn:hover {
+  background-color: #ff0055;
+}
+
+/* Section styles */
+.section-intro {
+  height: 820px;
+  background-image: url(img/homepage.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-intro h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 4em;
+  font-weight: 700;
+}
+
+/* About and Form section styles */
+.button-section,
+.about-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3f3f3c0;
+  padding: 10px;
+}
+
+.link-to-book,
+.form-group p {
+  font-size: 1.2em;
+}
+
+a.link-to-book:hover {
+  background-color: #ffffff;
+  color: #95999e;
+  text-decoration: none;
+}
+
+
+.about-section h2,
+.about-section h3 {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+  font-family: "Big Shoulders Text", cursive;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+h2 {
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  font-family: "Big Shoulders Text", cursive;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+h1 {
+  text-align: center;
+  width: 95%;
+  margin: auto;
+  font-family: "Big Shoulders Text", cursive;
+  font-size: .9em;
+  text-transform: uppercase;
+}
+
+.about-section p,
+p {
+  text-align: center;
+  width: 85%;
+  margin: 15px auto;
+  font-size: 1.1em;
+}
+  
+.row-flex,
+.flex-column-form,
+.opening-time,
+.contact-adress {
+  display: flex;
+  flex-direction: row;
+  margin: 30px 20px;
+}
+
+/* Form button styles */
+.btn.btn-primary {
+  font-family: "Big Shoulders Text", cursive;
+  color: #ffffff;
+  background-color: #95999e;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  border: 0;
+}
+
+.btn.btn-primary:hover {
+  background-color: #747474;
+}
+
+/* Opening time and contact address styles */
+.opening-time,
+.contact-adress {
+  flex: 1;
+  font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span {
+  display: block;
+}
+
+/* Carousel styles */
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+  border-top: 5px solid rgba(13,77,141,255);
+}
+
+.carousel-item img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 576px) {
+  .carousel-inner {
+    height: 300px;
+  }
+
+  .carousel-item img {
+    height: 300px;
+  }
+}
+
+/* Default styles for FOOD MENU section */
+.food-menu {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.food-menu img {
+  max-width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: wrap;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  width: auto;
+  height: auto;
+}
+
+.form-container {
+  font-family: Arial, sans-serif;
+  background-color: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .container {
+    width: 80%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  input,
+  select,
+  textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+.footer {
+  align-items: center;
+  font-family: Roboto;
+  font-size: 1em;
+  color: white; 
+}
+  
+/* Media query for mobile devices */
+@media only screen and (max-width: 576px) {
+  .food-menue{
+    margin: 10px 0; /* Adjust margin for smaller screens */
+  }
+
+  .food-menu img {
+    max-width: 100%; /* Make images responsive to the width of the screen */
+    height: auto;
+    margin: 5px auto; /* Adjust margin for smaller screens */
+    box-shadow: none; /* Remove box shadow on smaller screens */
+  }
+
+  .menu-container {
+    height: auto; /* Adjust height for smaller screens */
+  }
+  .form-container {
+    font-family: Arial, sans-serif;
+    background-color: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

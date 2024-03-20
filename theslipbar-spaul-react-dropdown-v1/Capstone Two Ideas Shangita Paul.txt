@@ -1,0 +1,15 @@
+﻿Project Background::
+For my capstone project, I am going to integrate with a website commission for a client. The client is The Slip Bar and Eatery; a sports bar with two locations in Redondo Beach, CA and Lomita, CA. I have already been working as their social media assistant for their Instagram page. The website should be very basic; the homepage should simply contain two links for each location, which will have their separate menus. Since there is a rush to build the page, all the menus will be in PDF/images. The main homepage will contain a navigation bar consisting of the following pages: About, Locations, Jobs, Contact, and Events. The Live Music page will contain the embed API for Tockify; a popular calendar app used by many restaurants. 
+
+
+Current GitHub repo: https://github.com/ShangitaPaul/theslipbar/tree/spaul-march-4-2024-basic-v3
+
+
+Project Proposal: Refactoring Restaurant Website with React, Node.js, and Google Maps API.
+
+
+By refactoring the codebase and integrating new technologies, the goal is to deliver a responsive, interactive, and visually appealing web application that provides an improved user experience and facilitates navigation to the restaurant locations.
+
+
+Capstone Overview:
+The aim of this capstone project is to refactor an existing restaurant website draft, which is currently built using HTML, CSS, and JavaScript, into a modern web application using React for the frontend and Node.js for the backend. I will then Integrate the Google Maps API to display maps and provide directions to the restaurant locations.
